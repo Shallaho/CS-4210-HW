@@ -38,7 +38,6 @@ for row in db:
             x.append(3)
     del x[4]
     X.append(x)
-print(X)
 
 # transform the original categorical training classes into numbers and add to the vector Y. For instance Yes = 1, No = 2
 for row in db:
@@ -50,7 +49,6 @@ for row in db:
             y.append(2)
     del y[0]
     Y.append(y)
-print(Y)
 
 # fitting the decision tree to the data
 clf = tree.DecisionTreeClassifier(criterion='entropy')
